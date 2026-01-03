@@ -10,5 +10,5 @@ rss_ignore: false
 draft: false
 ---
 
-{{<figure src="/images/2024_11/faeries_021.png" alt="paradise is a small bathroom with a heating vent in the ceiling.">}}
-{{<figure src="/images/2024_11/faeries_022.png" alt="starnose's nose falls apart.">}}
+{{<img src="/2024/faeries_021.png" alt="paradise is a small bathroom with a heating vent in the ceiling.">}}
+{{<img src="/2024/faeries_022.png" alt="starnose's nose falls apart.">}}

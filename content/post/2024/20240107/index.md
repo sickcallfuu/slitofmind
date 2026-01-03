@@ -15,9 +15,9 @@ rss_ignore: false
 
 # work added to main site:
 - 2 new digital drawings under [Wizards 2023](https://margot.maison/wizards/). This'll be the last update to that section, I'll start a new one for this year. All these characters are related to an original character (working on a related story.)
-{{<figure src="/images/2024_01/elva.png" alt="jade wand" width="200">}} {{<figure src="/images/2024_01/raymonda20231211.jpg" alt="raymonda" width="200">}}
+{{<img src="/2024/elva.png" alt="jade wand" width="200">}} {{<img src="/2024/raymonda20231211.jpg" alt="raymonda" width="200">}}
 - 3 weird little quick drawings of stingrays added under [Drawings 2022-2023](https://margot.maison/draw2022-2023/).
-{{<figure src="/images/2024_01/20231125_4.png" alt="kissy the stingray" width="400">}}
+{{<img src="/2024/20231125_4.png" alt="kissy the stingray" width="400">}}
 - New drawing section titled [Bora Visions](https://margot.maison/boravisions/) which is for stand alone drawings related to the [Bora the Brain comic](https://margot.maison/bora/about.html).
 - New comics section [Fuu's Archive](https://margot.maison/fuu/) for old comics / drawings featuring a character named Fuu.
-{{<figure src="/images/2024_01/fuubomb4.jpg" alt="fuu being" width="300">}}
+{{<img src="/2024/fuubomb4.jpg" alt="fuu being" width="300">}}

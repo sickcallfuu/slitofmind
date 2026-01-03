@@ -10,6 +10,6 @@ tags:
 rss_ignore: false
 draft: false
 ---
-{{<figure src="/images/2023_10/wandcomicwip01.png" alt= "wand comic page 1">}}
-{{<figure src="/images/2023_10/wandcomicwip02.png" alt= "wand comic page 2">}}
-{{<figure src="/images/2023_10/wandcomicwip03.png" alt= "wand comic page 3">}}
+{{<img src="/2023/wandcomicwip01.png" alt= "wand comic page 1">}}
+{{<img src="/2023/wandcomicwip02.png" alt= "wand comic page 2">}}
+{{<img src="/2023/wandcomicwip03.png" alt= "wand comic page 3">}}

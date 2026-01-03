@@ -10,4 +10,4 @@ tags:
 rss_ignore: false
 ---
 
-{{<img src="/2023_12/20231203/screenshot.png" alt="wizard in progress">}}
+{{<img src="/2023/screenshot.png" alt="wizard in progress">}}

@@ -13,14 +13,14 @@ rss_ignore: false
 draft: false
 ---
 # star of swan
-{{<figure src= "/images/2024_07/cover_front.jpg" alt="star of swan cover">}}
+{{<img src= "/2024/cover_front.jpg" alt="star of swan cover">}}
 
 There's been an excerpt from this comic on the site for a long time but it's finally being published August 18th. It's 60 pages and you can pre-order it from [Breakdown Press's website](https://www.breakdownpress.com/store/star-of-swan-by-margot-ferrick).
 
 Breakdown is also publishing a short [collection of the Fromsoft fanart I've done over the past few years](https://www.breakdownpress.com/store/half-gold-half-dung-by-margot-ferrick).
 
 # site updates
-{{<figure src= "/images/2024_07/pibbletree2.png" alt="pibble tree 2">}}
+{{<img src= "/2024/pibbletree2.png" alt="pibble tree 2">}}
 
 * Added a couple of drawings to:
     * [Wizards II](https://margot.maison/wizards/2024/)
@@ -41,4 +41,4 @@ Breakdown is also publishing a short [collection of the Fromsoft fanart I've don
 # normal to do
 * ???
 
-{{<figure src="/images/2024_07/baggy.png" alt="baggy">}}
+{{<img src="/2024/baggy.png" alt="baggy">}}

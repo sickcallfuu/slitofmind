@@ -17,26 +17,26 @@ draft: false
 ---
 
 # Printed Work
-{{<figure src="/images/2024_05/cover.jpg" alt="cover of Lagon 7, PLUIE." caption="This is the cover.">}}
+{{<img src="/2024/cover.jpg" alt="cover of Lagon 7, PLUIE." caption="This is the cover.">}}
 
 I have a short comic in the new Lagon book, PLUIE. It's available over [here!](https://revuelagon.com/) Here's a page from it. It's based on Elden Ring...
 
-{{<figure src="/images/2024_05/agodforeverymetal_002.png" alt="page 02 of my comic for Lagon PLUIE.">}}
+{{<img src="/2024/agodforeverymetal_002.png" alt="page 02 of my comic for Lagon PLUIE.">}}
 
 # Site Updates
 ## Comics
-{{<figure src="/images/2024_05/poddycalf_bleed_011.png" alt="poddy-calf page 11">}}
+{{<img src="/2024/poddycalf_bleed_011.png" alt="poddy-calf page 11">}}
 
 Added a new section called [SCRAP](https://margot.maison/scrap/), which is for comics that are either in progress or finished comics that I can't post online in full. Some of these are short pieces made for anthologies. I think technically it would be fine posting the whole thing online but it seems like better etiquette (?) to wait until after the anthology has been out for a bit.  
 
 
 ## Drawings
-{{<figure src="/images/2024_05/mantawiz.png" alt="manta ray wizard on the shore." caption="manta ray wizard on the shore.">}}
+{{<img src="/2024/mantawiz.png" alt="manta ray wizard on the shore." caption="manta ray wizard on the shore.">}}
 
 Updated [Wizards II](https://margot.maison/wizards/2024/) page with 7 new drawings made from late February to now.
 
 ## Illustration
-{{<figure src="/images/2024_05/poster_final_3.png" alt="poster for Zine Not Dead Fest.">}}
+{{<img src="/2024/poster_final_3.png" alt="poster for Zine Not Dead Fest.">}}
 
 Poster for Zine Not Dead Fest. [See here for info!](https://fest.zinenotdead.com/)
 
