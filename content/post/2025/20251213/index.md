@@ -12,4 +12,4 @@ rss_ignore: false
 draft: false
 ---
 
-{{<img src="/20251213/milkswimmer.png" alt="milk swimmer">}}
+{{<img src="/2025/milkswimmer.png" alt="milk swimmer">}}

@@ -11,7 +11,7 @@ rss_ignore: false
 draft: false
 ---
 
-{{<img src="/20250630/bora_pencils_ch01_010.png" width="1000" height="1414" alt="Bora the Brain ch01, p10" caption="Bora the Brain ch01, p10." >}}
+{{<img src="/2025/bora_pencils_ch01_010.png" width="1000" height="1414" alt="Bora the Brain ch01, p10" caption="Bora the Brain ch01, p10." >}}
 
 I must have drawn this a couple of months ago. (Adjusted levels to make it more contrasty -- it doesn't look like this irl.) Updated the [progress table](/page/bora_table) for this comic. I was scanning things at 600dpi and need to rescan them all at 1200. 
 

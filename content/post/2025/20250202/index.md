@@ -12,7 +12,7 @@ rss_ignore: false
 draft: false
 ---
 
-{{<figure src="/images/2025_02/doleyredscarf2.png">}}
+{{<img src="/2025/doleyredscarf2.png">}}
 # site updates
 - moved my fromsoft fanart from fuu.ooo to [fuu.margot.maison](https://fuu.margot.maison)
 - added a new drawing gallery called [Doley [NSFW]](https://margot.maison/doley)

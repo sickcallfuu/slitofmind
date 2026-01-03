@@ -10,4 +10,4 @@ rss_ignore: false
 draft: false
 ---
 
-{{<img src="/20250717/bora_01_wallmural.png" width="1000" height="1417" alt="Bora the Brain, damaged wall mural." caption="Bora the Brain Ch01, p002 (detail.)" >}}
+{{<img src="/2025/bora_01_wallmural.png" width="1000" height="1417" alt="Bora the Brain, damaged wall mural." caption="Bora the Brain Ch01, p002 (detail.)" >}}

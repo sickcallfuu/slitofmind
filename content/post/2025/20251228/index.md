@@ -10,4 +10,4 @@ tags:
 rss_ignore: false
 draft: false
 ---
-{{< img src="/20251228/bora_ch02_017.png" width="1072" height="1492" alt="page from bora the brain, chapter 02." caption="bora the brain, ch02, p017." >}}
+{{< img src="/2025/bora_ch02_017.png" width="1072" height="1492" alt="page from bora the brain, chapter 02." caption="bora the brain, ch02, p017." >}}

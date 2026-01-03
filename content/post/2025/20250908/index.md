@@ -14,6 +14,7 @@ Some details of pages from last week -- both are from the longer Bora the Brain 
 
 My page numbers are off (I can't remember in which direction.
 )
-{{<img src="/20250908/screenshot_bora02_004.png" width="1220" height="918" alt="detail of page 4 from Bora the Brain" caption="detail of unfinished page 004." >}}
 
-{{<img src="/20250908/screenshot_bora02_005.png" width="1220" height="804" alt="detail of page 4 from Bora the Brain" caption="detail of page 005." >}}
+{{<img src="/2025/screenshot_bora02_005.png" width="1220" height="804" alt="detail of page 4 from Bora the Brain" caption="detail of page 005." >}}
+
+{{<img src="/2025/screenshot_bora_eggs.png" width="1220" height="918" alt="detail of page 4 from Bora the Brain" caption="detail of unfinished page." >}}

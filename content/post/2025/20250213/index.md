@@ -11,7 +11,7 @@ tags:
 rss_ignore: false
 draft: false
 ---
-{{<img src="/20250213/bora_pencils_ch01_003.png" alt="Penciled page from Bora the Brain chapter 1." >}}
+{{<img src="/2025/bora_pencils_ch01_003.png" alt="Penciled page from Bora the Brain chapter 1." >}}
 BORA THE BRAIN / ch01_003.
 This is a redo of [this comic](https://margot.maison/bora_old/ch01/), which was drawn back in late 2021 - early2022.
 

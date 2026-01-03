@@ -12,7 +12,7 @@ rss_ignore: false
 draft: false
 ---
 
-{{<img src="/20250301/bora_ch04.png" alt="inked and toned page from chapter 4 of Bora the Brain." >}}
+{{<img src="/2025/bora_ch04.png" alt="inked and toned page from chapter 4 of Bora the Brain." >}}
 BORA THE BRAIN / ch04 p001 
 
 | Chapter | Penciled | Inked | Processed/Toned | Lettered | Needs edits? | DONE? |
