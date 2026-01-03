@@ -3,7 +3,6 @@ title = "slit of mind"
 author = "margot ferrick"
 email = "m@margot.maison"
 languageCode = "en-US"
-theme = "sk1"
 
 [outputs]
 page = ["HTML"]
