@@ -1,0 +1,40 @@
+baseURL = "https://slit.margot.maison"
+title = "slit of mind"
+author = "margot ferrick"
+email = "m@margot.maison"
+languageCode = "en-US"
+theme = "sk1"
+
+[outputs]
+page = ["HTML"]
+home = ["HTML", "RSS"]
+section = ["HTML","RSS"]
+taxonomy = ["HTML", "RSS"]
+
+[taxonomies]
+category = "categories"
+tag = "tags"
+
+[outputFormats]
+  [outputFormats.RSS]
+    mediatype = "application/rss"
+    baseName = "rss"
+
+[pagination]
+  pagersize = 50
+
+math = true
+katex = true
+
+[markup]
+  [markup.goldmark]
+    [markup.goldmark.renderer]
+      unsafe = true
+
+[Params]
+mainSections = "post"
+dateFormat = "2006-01-02"
+imageCdn = "https://cdn.margot.maison/slitofmind/static/images/"
+
+pygmentsUseClasses = true
+canonifyurls = true

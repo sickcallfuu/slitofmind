@@ -1,0 +1,20 @@
+{{define "main"}}
+
+<!--Title-->
+<h4>{{.Title}}</h4>
+{{ $date := .Date.Format "2006-01-02" }}
+{{ $lastmod := .Lastmod.Format "2006-01-02" }}
+<p>lastmod:</p>
+<ul>
+    <li>{{ $date }} {{ if ne $lastmod $date }}</li>
+    <ul>
+        <li> → last update {{ .Lastmod.Format "2006-01-02" }} {{ end }}</li>
+    </ul>
+</ul>
+
+<!--Content-->
+{{.Content}}
+
+<p>tags: {{ partial "tags.html" .}}</p>
+
+{{end}}

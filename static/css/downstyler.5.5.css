@@ -1,0 +1,174 @@
+/* ------------------------------------------------------------------------------------------------------------------ */
+/* Layout engine improvements                                                                                         */
+/* ------------------------------------------------------------------------------------------------------------------ */
+
+/* Make HTML more responsive (adapted from https://github.com/mrmrs/fluidity) */
+img, canvas, iframe, video, svg, select, textarea { max-width: 100%; height: auto; }
+pre { overflow-x: auto; }
+
+/* Box-model fix (adapted from https://css-tricks.com/box-sizing/) */
+html { box-sizing: border-box; }
+*, *:before, *:after { box-sizing: inherit; }
+
+/* ------------------------------------------------------------------------------------------------------------------ */
+/* Improved typography and prose readability                                                                          */
+/* ------------------------------------------------------------------------------------------------------------------ */
+
+
+/* Size text according to screen width (adapted from https://css-tricks.com/molten-leading-css/) */
+/* Min size: 1rem (16px), max size: 1.5rem (24px); dynamic size applies between 600px and 2600px. */
+html { font-size: clamp(1rem, calc(13.6px + 0.4vw), 1.5rem); }
+
+/* Improved text layout and spacing (adapted from http://bettermotherfuckingwebsite.com) */
+body {line-height: 1.4;}
+p { max-width: 50em; text-align: justify; hyphens: auto; }
+h1, h2, h3, h4, h5, h6 { margin-top: 1em; margin-bottom: 0.5em; line-height: 1.2; text-transform: uppercase; font-weight: 600;}
+
+/* Improved contrast (adapted from https://jgthms.com/web-design-in-4-minutes/#color-contrast) */
+body { color: #111; background-color: #f5f5f5; }
+:not(a[href]) b, :not(a[href]) strong, th { color: #222; }
+
+/* Logarithmic size scale for headings (see https://github.com/waldyrious/downstyler/issues/30) */
+h1 { color: #111; font-size: 200.00%; /* 2^(6/6) */ }
+h2 { color: #222; font-size: 178.18%; /* 2^(5/6) */ }
+h3 { color: #333; font-size: 158.74%; /* 2^(4/6) */ }
+h4 { color: #444; font-size: 141.42%; /* 2^(3/6) */ }
+h5 { color: #555; font-size: 125.99%; /* 2^(2/6) */ }
+h6 { color: #666; font-size: 112.25%; /* 2^(1/6) */ }
+
+/* Use nicer serif fonts, if available */
+body { font-family:Arial, Helvetica, sans-serif;}
+
+header {
+    width: 100%;
+    padding-bottom: 0.1em;
+    border-bottom: 1px solid #111;
+}
+
+footer {
+    width: 100%;
+    border-top: 1px solid #111;
+}
+
+hr {
+	border-top: none;
+	border-bottom: 1px solid #111;
+}
+
+@media (prefers-color-scheme: dark) {
+  body {
+    background-color: #222;
+    color: gainsboro;
+  }
+
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    color: silver;
+  }
+
+  a[href],
+  a[href]:hover,
+  a[href]:visited {
+    color: gainsboro;
+  }
+
+  hr {
+    border: none;
+    border-top: gray 1px solid;
+  }
+
+  img.pixel {
+    filter: invert(1) brightness(.9);
+  }
+
+  img {
+    filter: brightness(.9) contrast(.9);
+  }
+  header {
+    width: 100%;
+    padding-bottom: 0.1em;
+    border-bottom: 1px solid gainsboro;
+}
+
+footer {
+    width: 100%;
+    border-top: 1px solid gainsboro;
+}
+}
+/* ------------------------------------------------------------------------------------------------------------------ */
+/* Simple table style                                                                                                 */
+/* ------------------------------------------------------------------------------------------------------------------ */
+
+table { 
+    display: block;
+    border-collapse: collapse; 
+    width: 100%;
+    height: auto;
+    overflow-x: auto;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: smaller;
+} 
+th, td { padding-left: .5em; padding-right: 1em; text-align: left; border: 1px solid inherit; }
+th, thead, tfoot { text-transform: uppercase; border: none; color: inherit; }
+
+/* ------------------------------------------------------------------------------------------------------------------ */
+/* Forms and form inputs (work in progress, see https://github.com/waldyrious/downstyler/issues/5)                    */
+/* ------------------------------------------------------------------------------------------------------------------ */
+
+textarea { display: block; width: 100%; }
+input, textarea, select, button { font-family: inherit; font-size: 100%; margin: 0.2em 0; }
+select[size]:not([size="1"]) { vertical-align: top; }
+
+/* ------------------------------------------------------------------------------------------------------------------ */
+/* Images and figures                                                                                                 */
+/* ------------------------------------------------------------------------------------------------------------------ */
+figure {
+    max-width: 100%;
+    padding: 1em;
+    margin: auto;
+}
+
+@media (max-width: 600px) {
+    figure {
+        padding: 0em;
+    }
+}
+
+/*pixelly images*/
+.pixel {
+    image-rendering: pixelated;
+    image-rendering: -moz-crisp-edges;
+    image-rendering: crisp-edges;
+}
+
+/* Add margins to left- and right-aligned images (https://github.com/waldyrious/downstyler/issues/13) */
+img[align="right"] { margin-left: 1em; }
+img[align="left"] { margin-right: 1em; }
+
+/* Figure captions */
+figcaption { font-family:'Courier New', Courier, monospace; color: inherit; font-size: 75% !important; }
+
+/* Prevent blowing up SVG images that are meant to be small */
+*[class*="social"] svg, *[class*="icon"] svg, svg[class*="icon"], img[class*="emoji"][src$=".svg"] { max-height: 30px; }
+*[class*="logo" i] svg, *[id*="logo" i] svg { max-width: 100px; }
+
+/* ------------------------------------------------------------------------------------------------------------------ */
+/* Additional adjustments                                                                                             */
+/* ------------------------------------------------------------------------------------------------------------------ */
+
+/* Softer link colors than the browser defaults */
+a[href] { color: inherit; }
+a[href]:visited { color: inherit; }
+
+/* Styles for code-related elements */
+pre, :not(pre) code, kbd, samp, tt { padding: .1em .3em; margin: 0 .1em; font-size: 80%; background: #eee; }
+
+/* Styles for blockquote elements */
+blockquote { padding-left: 1em; margin-left: 0; border-left: 5px solid #ddd; color: #666; }
+
+/* Softer selection color that works over text and links without the color inversion effect */
+::selection { background-color: #def; }
