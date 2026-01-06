@@ -1,8 +1,20 @@
+{{- /*
+Fork of the hugo built-in "figure" shortcode[1], modified to serve images from
+a CDN instead of a local directory if the imageCdn config parameter is set.
 
+The original is licensed under the Apache 2.0 license, as is this fork. A copy
+of the license can be found in this repository in the LICENSE file.
+
+[1]: https://github.com/gohugoio/hugo/blob/029d1e0ced541450fe7f056eaa438a1f6ac28685/tpl/tplimpl/embedded/templates/shortcodes/figure.html
+
+*/ -}}
 
 {{- $imageCdn := .Site.Params.imageCdn -}}
 
 <figure{{ with .Get "class" }} class="{{ . }}"{{ end }}>
+  {{- if .Get "link" -}}
+    <a href="{{ .Get "link" }}"{{ with .Get "target" }} target="{{ . }}"{{ end }}{{ with .Get "rel" }} rel="{{ . }}"{{ end }}>
+  {{- end -}}
 
   {{- $u := urls.Parse (.Get "src") -}}
   {{- $src := $u.String -}}
@@ -15,20 +27,20 @@
       {{- end -}}
     {{- end -}}
   {{- end -}}
- 
-  {{- $cdn := printf "%s" (strings.TrimSuffix "/" $imageCdn) -}}
 
   <img src="{{ $src }}"
     {{- if or (.Get "alt") (.Get "caption") }}
     alt="{{ with .Get "alt" }}{{ . }}{{ else }}{{ .Get "caption" | markdownify| plainify }}{{ end }}"
     {{- end -}}
-    {{ with try (resources.GetRemote $src) }}{{ with .Value }} width="{{ .Width }}" height="{{ .Height }}"{{ end }}{{ end }}>
-  <!-- Closing img tag -->
+    {{- with .Get "width" }} width="{{ . }}"{{ end -}}
+    {{- with .Get "height" }} height="{{ . }}"{{ end -}}
+    {{- with .Get "loading" }} loading="{{ . }}"{{ end -}}
+  ><!-- Closing img tag -->
   {{- if .Get "link" }}</a>{{ end -}}
   {{- if or (or (.Get "title") (.Get "caption")) (.Get "attr") -}}
     <figcaption>
       {{ with (.Get "title") -}}
-        <p>{{ . }}</p>
+        <h4>{{ . }}</h4>
       {{- end -}}
       {{- if or (.Get "caption") (.Get "attr") -}}<p>
         {{- .Get "caption" | markdownify -}}
@@ -39,4 +51,5 @@
         {{- if .Get "attrlink" }}</a>{{ end }}</p>
       {{- end }}
     </figcaption>
-  {{- end }}</figure>
+  {{- end }}
+</figure>
