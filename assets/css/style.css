@@ -45,14 +45,6 @@ p {
   hyphens: auto;
 }
 
-span.red {
-  font-size: small;
-  padding: 0.1em;
-  color: #9f1239;
-  background-color: #fff1f2;
-  border: #9f1239 solid 1px;
-}
-
 a[href],
 a[href]:visited {
   color: #525252;
@@ -114,7 +106,6 @@ td {
   padding-left: .5em;
   padding-right: 1em;
   text-align: left;
-  border: 1px solid inherit;
 }
 
 th,
@@ -172,12 +163,6 @@ img[class*="emoji"][src$=".svg"] {
   h5,
   h6 {
     color: inherit;
-  }
-
-  span.red {
-    color: #0c0a09;
-    background-color: #d6d3d1;
-    border: none;
   }
 
   a[href],
