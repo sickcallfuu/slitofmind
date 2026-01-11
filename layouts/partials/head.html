@@ -1,7 +1,8 @@
 <head>
 	<meta charset="UTF-8" />
 	<meta name="viewport" content="width=device-width" />
-	<link rel="stylesheet" type="text/css" href="/css/home.5.10.css">
+	{{ $css := resources.Get "css/style.css" | minify }}
+	<link href="{{ $css.RelPermalink }}" rel="stylesheet">
 	<link rel="alternate" type="application/rss+xml" href="{{.Site.BaseURL }}/rss.xml" title="{{ .Site.Title }}">
 	<title>slit of mind</title>
 </head>
