@@ -9,12 +9,21 @@
         <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/>
         <meta charset="UTF-8"/>
         <style>
+          body {
+            margin: auto;
+            max-width: 40em;
+            font-family: monospace;
+            }
 
           article {
             padding-bottom: 1em;
             border-bottom: 1px dotted #111;
             }
-            
+
+          img{
+            width: 100%
+            }
+
           @media (prefers-color-scheme: dark) {
             body {
                 background-color: #111;
