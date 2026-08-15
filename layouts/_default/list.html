@@ -1,7 +1,4 @@
 {{define "main"}}
-<p>{{range ($.Site.GetPage "taxonomyTerm" "categories").Pages }}<a href="{{.Permalink}}">{{.Title}}</a>/ 
-	{{end}}</p>
-	<p><a href="/tags">list of tags</a></p>
 
 <!--$paginator-->
 {{$p := .Pages}}
