@@ -2,7 +2,7 @@ baseURL = "https://slit.margot.maison"
 title = "slit of mind"
 author = "margot ferrick"
 email = "m@margot.maison"
-languageCode = "en-US"
+locale = "en-US"
 
 [outputs]
 page = ["HTML"]
