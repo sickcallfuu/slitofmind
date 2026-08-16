@@ -1,6 +1,5 @@
 {{define "main"}}
 
-<!--$paginator-->
 {{$p := .Pages}}
 {{if .IsHome}}
 {{$p = where site.RegularPages "Type" "in" site.Params.mainSections}}
@@ -9,13 +8,11 @@
 {{end}}
 {{$paginator := .Paginate $p}}
 
-<!--list-->
 <ul class="post-list">
 	{{range $paginator.Pages}}
 	<li>{{.Date.Format "2006-01-02"}} ... <a href="{{.RelPermalink}}">{{.Title}}</a></li>
 	{{end}}
 </ul>
 
-<!--pagination-->
 {{template "_internal/pagination.html" .}}
 {{end}}

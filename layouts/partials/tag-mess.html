@@ -1,0 +1,11 @@
+<details>
+    <summary>
+        list of tags:
+    </summary>
+    {{range $name, $taxonomy := .Site.Taxonomies.tags}} {{ $cnt := .Count }}
+    {{ with $.Site.GetPage (printf "/tags/%s" $name) }}
+    <small><i><a href={{ .RelPermalink }} title="All pages with tag <i>{{$name}}</i>">{{$name}}</a></i></small>
+    <sup>{{$cnt}}</sup>
+    {{end}}
+    {{end}}
+</details>
