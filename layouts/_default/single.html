@@ -1,18 +1,18 @@
 {{define "main"}}
 
-<section>
+
     <h1>{{.Title}}</h1>
     <p>{{.Date.Format "2006-01-02"}}</p>
     <ul>
-        <li> categories: {{ partial "categories.html" .}}</li>
+        <li>categories: {{ partial "categories.html" .}}</li>
         <li>tags: {{ partial "tags.html" .}}</li>
     </ul>
-</section>
-<section>
-    <article>
+
+
+    <main>
         {{.Content}}
-    </article>
-</section>
+    </main>
+
 <p>~</p>
 
 {{with .PrevInSection}}<p>previous: <i><a href="{{.RelPermalink}}">{{.Title}}</a></i>{{end}} |
