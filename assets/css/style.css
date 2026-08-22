@@ -91,10 +91,6 @@ header {
   max-width: 100%;
 }
 
-footer {
-  text-align: center;
-}
-
 table {
   border-collapse: collapse;
 }
@@ -199,14 +195,18 @@ img[class*="emoji"][src$=".svg"] {
   }
 }
 
-@media screen and (width <=35rem) {
+@media screen and (width <=55rem) {
 
   body {
-    padding: 0em 0.2em;
+    padding: 0em;
   }
 
   header {
     font-size: large;
     line-height: 1.8;
+  }
+  
+  figure {
+    margin: 0;
   }
 }
